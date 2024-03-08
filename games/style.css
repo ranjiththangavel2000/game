@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgb(224, 255, 234);
+}
+.container{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background:darkslategrey;
+}
+.score-details{
+    color: azure;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-area{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template:repeat(30,1fr)/repeat(30,1fr) ;
+    background: rgb(93, 98, 98);
+}
+.play-area .food{
+    background: red;
+}
+.play-area .snake{
+    background: white;
+}
+
+
+.pauseButton {
+    display: flex;
+    justify-content: center;
+    background-color:darkslategrey;
+}
+#pauseButton{
+    color: antiquewhite;
+    background:lightslategray;
+    border-color:lightslategray  ;
+}
